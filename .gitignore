@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+.output
+.netlify
+.vercel
+.wrangler
+.vinxi
+.nitro
+.tanstack
+build
+*.tsbuildinfo
+
+# Env
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Test files
+test-server.js
+test3002.js
+askpass.*
+
+# Output files
+*-output.txt
+*-error.txt
+*-err.txt
+create-ref.json
+
+# Vercel/Netlify
+.vercel
+.netlify

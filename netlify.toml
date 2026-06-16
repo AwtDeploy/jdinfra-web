@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Nitro's `netlify` preset writes:
+#   - server bundles to .netlify/functions-internal/server/server.mjs
+#     (wrapper that re-exports the SSR handler with config.path = "/*"
+#      and config.preferStatic = true — so Netlify routes all
+#      non-static requests to it automatically)
+#   - static assets to dist/
+# We deliberately do NOT add a [[redirects]] rule: the function's
+# own `path: "/*"` config is what wires up SSR.
